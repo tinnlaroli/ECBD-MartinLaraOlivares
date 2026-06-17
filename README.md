@@ -81,7 +81,7 @@ Aplicar técnicas de extracción, transformación, limpieza y análisis de datos
 │   ├── Lab05.ipynb          # Modelo DIKW - Netflix
 │   ├── Lab06.ipynb          # Limpieza de datos sucios
 │   ├── Lab07.ipynb          # Principio GIGO - Facturas
-│   ├── Lab08.ipynb          # ETL a Data Warehouse con PostgreSQL
+│   ├── SHP.ipynb          # ETL a Data Warehouse con PostgreSQL
 │   ├── Lab09.ipynb          # Datos sintéticos con Faker
 │   └── Lab10.ipynb          # Datos sintéticos con SDV
 ├── 📁 DataSet/
@@ -109,7 +109,7 @@ Aplicar técnicas de extracción, transformación, limpieza y análisis de datos
 | Lab05       | Aplicación del modelo DIKW en el catálogo de Netflix                 | `netflix_titles.csv`  |
 | Lab06       | Limpieza y transformación de datos sucios                            | `dataset_sucio_practica.csv` |
 | Lab07       | Principio GIGO: generación, limpieza y transformación de facturas    | `ventas-por-factura.csv` |
-| Lab08       | ETL a Data Warehouse: carga de datos a PostgreSQL                    | `Data_Limpio_Factura.csv` |
+| SHP         | ETL a Data Warehouse: carga de datos a PostgreSQL                    | `Data_Limpio_Factura.csv` |
 | Lab09       | Datos sintéticos con Faker                                           | Datos sintéticos      |
 | Lab10       | Datos sintéticos con SDV (Synthetic Data Vault)                      | `dataset_sucio_practica.csv` |
 
@@ -175,7 +175,7 @@ Aplicar técnicas de extracción, transformación, limpieza y análisis de datos
 - Se filtraron valores negativos en `Cantidad` y `Monto`.
 - Los datos limpios se exportaron a `Data_Limpio_Factura.csv`.
 
-### Lab08 - ETL a Data Warehouse (PostgreSQL)
+### SHP - ETL a Data Warehouse (PostgreSQL)
 - Se implementó un proceso ETL completo: extracción desde CSV, transformación (normalización a esquema estrella) y carga a PostgreSQL.
 - Se crearon 3 dimensiones (`dim_cliente`, `dim_producto`, `dim_tiempo`) y una tabla de hechos (`hechos_ventas`).
 - Se cargaron 4339 clientes, 39 productos, 305 periodos de tiempo y 20002 registros de hechos.
